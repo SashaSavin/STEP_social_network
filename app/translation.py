@@ -5,5 +5,5 @@ from app.models import Post
 
 @register(Post)
 class PostTranslationOptions(TranslationOptions):
-    fields = ('title', 'text',)
+    fields = ('title', )
     required_languages = ('ru', 'en')

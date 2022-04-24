@@ -6,3 +6,5 @@ urlpatterns = [
     path('', ElemsView.as_view()),
     path('<int:pk>/', ElemView.as_view(), name='detail')
 ]
+
+
