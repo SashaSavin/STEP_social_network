@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a3a79c09-efdf-415e-b8cd-62a026aa4c82" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="dev" />
+                    <option name="lastUsedInstant" value="1650834612" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1650552085" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="ProjectId" id="286shi2huRxTfcFYDS95tOkNHU7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="translate_proj" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/.local/share/virtualenvs/translate_proj-080QalA5/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a3a79c09-efdf-415e-b8cd-62a026aa4c82" name="Default Changelist" comment="" />
+      <created>1650548490965</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1650548490965</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="77" key="#Plugins" timestamp="1650647224676">
+      <screen x="0" y="25" width="1440" height="815" />
+    </state>
+    <state x="320" y="77" key="#Plugins/0.25.1440.815@0.25.1440.815" timestamp="1650647224676" />
+    <state x="344" y="91" width="1071" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1650548909311">
+      <screen x="0" y="25" width="1440" height="815" />
+    </state>
+    <state x="344" y="91" width="1071" height="707" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.815@0.25.1440.815" timestamp="1650548909311" />
+    <state x="322" y="197" width="796" height="643" key="EditFileWatcherDialog" timestamp="1650647406891">
+      <screen x="0" y="25" width="1440" height="815" />
+    </state>
+    <state x="322" y="197" width="796" height="643" key="EditFileWatcherDialog/0.25.1440.815@0.25.1440.815" timestamp="1650647406891" />
+    <state width="1394" height="182" key="GridCell.Tab.0.bottom" timestamp="1650834195791">
+      <screen x="0" y="25" width="1440" height="815" />
+    </state>
+    <state width="1394" height="182" key="GridCell.Tab.0.bottom/0.25.1440.815@0.25.1440.815" timestamp="1650834195791" />
+    <state width="1394" height="182" key="GridCell.Tab.0.center" timestamp="1650834195790">
+      <screen x="0" y="25" width="1440" height="815" />
+    </state>
+    <state width="1394" height="182" key="GridCell.Tab.0.center/0.25.1440.815@0.25.1440.815" timestamp="1650834195790" />
+    <state width="1394" height="182" key="GridCell.Tab.0.left" timestamp="1650834195790">
+      <screen x="0" y="25" width="1440" height="815" />
+    </state>
+    <state width="1394" height="182" key="GridCell.Tab.0.left/0.25.1440.815@0.25.1440.815" timestamp="1650834195790" />
+    <state width="1394" height="182" key="GridCell.Tab.0.right" timestamp="1650834195791">
+      <screen x="0" y="25" width="1440" height="815" />
+    </state>
+    <state width="1394" height="182" key="GridCell.Tab.0.right/0.25.1440.815@0.25.1440.815" timestamp="1650834195791" />
+    <state x="259" y="68" key="SettingsEditor" timestamp="1650827796994">
+      <screen x="0" y="25" width="1440" height="815" />
+    </state>
+    <state x="259" y="68" key="SettingsEditor/0.25.1440.815@0.25.1440.815" timestamp="1650827796994" />
+    <state x="385" y="164" width="670" height="676" key="search.everywhere.popup" timestamp="1650647206888">
+      <screen x="0" y="25" width="1440" height="815" />
+    </state>
+    <state x="385" y="164" width="670" height="676" key="search.everywhere.popup/0.25.1440.815@0.25.1440.815" timestamp="1650647206888" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/core/settings.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
