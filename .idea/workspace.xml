@@ -11,22 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3a79c09-efdf-415e-b8cd-62a026aa4c82" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/mixins.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/my_middleware.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chat/consumers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chat/routing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chat/templates/room.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/translation.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/translation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/asgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,12 +39,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1650552085" />
+                    <option name="branchName" value="dev" />
+                    <option name="lastUsedInstant" value="1650834612" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1650552084" />
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1650552085" />
                   </RecentBranch>
                 </list>
               </option>
