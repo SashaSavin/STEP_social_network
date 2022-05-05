@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block info %}
+{% endblock %}
+
+{% block content %}
+
+{% for p in profiles %}
+    <div class="container m-5">
+        <h3><img src="{{p.avatar.url}}" alt="" width="30" height="30" style="border-radius:50%;"> {{p}} <a href="{% url 'subscribe' %}" class="btn btn-primary">Подписаться</a>
+            <a href="">Публикации</a></h3>
+        </div>
+{% endfor %}
+
+{% endblock %}

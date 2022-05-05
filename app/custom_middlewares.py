@@ -1,6 +1,5 @@
 import time
 
-
 def timing(get_response):
     def middleware(request):
         t1 = time.time()
