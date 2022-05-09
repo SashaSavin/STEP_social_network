@@ -17,30 +17,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3a79c09-efdf-415e-b8cd-62a026aa4c82" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/admin/base_site.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/apps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/migrations/0002_post_text_en_post_text_ru_post_title_en_and_more.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/migrations/0003_remove_post_text_en_remove_post_text_ru.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/migrations/0002_post_likes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/migrations/0003_category_post_category.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/migrations/0004_relationship.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/migrations/0005_remove_category_user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/services.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/my_middleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/custom_middlewares.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/signals.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/create_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/create_post.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/profiles.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/profiles.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat/templates/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/chat/templates/chat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat/templates/room.html" beforeDir="false" afterPath="$PROJECT_DIR$/chat/templates/room.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todo" beforeDir="false" afterPath="$PROJECT_DIR$/todo" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +46,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -67,6 +63,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="feature" />
+                    <option name="lastUsedInstant" value="1651754530" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="dev" />
                     <option name="lastUsedInstant" value="1650834612" />
@@ -95,14 +95,15 @@
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/templates" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/templates" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -181,22 +182,22 @@
       <screen x="0" y="25" width="1440" height="815" />
     </state>
     <state x="322" y="197" width="796" height="643" key="EditFileWatcherDialog/0.25.1440.815@0.25.1440.815" timestamp="1650647406891" />
-    <state width="1394" height="216" key="GridCell.Tab.0.bottom" timestamp="1651619939552">
+    <state width="1394" height="216" key="GridCell.Tab.0.bottom" timestamp="1652111050270">
       <screen x="0" y="25" width="1440" height="815" />
     </state>
-    <state width="1394" height="216" key="GridCell.Tab.0.bottom/0.25.1440.815@0.25.1440.815" timestamp="1651619939552" />
-    <state width="1394" height="216" key="GridCell.Tab.0.center" timestamp="1651619939551">
+    <state width="1394" height="216" key="GridCell.Tab.0.bottom/0.25.1440.815@0.25.1440.815" timestamp="1652111050270" />
+    <state width="1394" height="216" key="GridCell.Tab.0.center" timestamp="1652111050269">
       <screen x="0" y="25" width="1440" height="815" />
     </state>
-    <state width="1394" height="216" key="GridCell.Tab.0.center/0.25.1440.815@0.25.1440.815" timestamp="1651619939551" />
-    <state width="1394" height="216" key="GridCell.Tab.0.left" timestamp="1651619939548">
+    <state width="1394" height="216" key="GridCell.Tab.0.center/0.25.1440.815@0.25.1440.815" timestamp="1652111050269" />
+    <state width="1394" height="216" key="GridCell.Tab.0.left" timestamp="1652111050269">
       <screen x="0" y="25" width="1440" height="815" />
     </state>
-    <state width="1394" height="216" key="GridCell.Tab.0.left/0.25.1440.815@0.25.1440.815" timestamp="1651619939548" />
-    <state width="1394" height="216" key="GridCell.Tab.0.right" timestamp="1651619939551">
+    <state width="1394" height="216" key="GridCell.Tab.0.left/0.25.1440.815@0.25.1440.815" timestamp="1652111050269" />
+    <state width="1394" height="216" key="GridCell.Tab.0.right" timestamp="1652111050270">
       <screen x="0" y="25" width="1440" height="815" />
     </state>
-    <state width="1394" height="216" key="GridCell.Tab.0.right/0.25.1440.815@0.25.1440.815" timestamp="1651619939551" />
+    <state width="1394" height="216" key="GridCell.Tab.0.right/0.25.1440.815@0.25.1440.815" timestamp="1652111050270" />
     <state x="259" y="68" key="SettingsEditor" timestamp="1650827796994">
       <screen x="0" y="25" width="1440" height="815" />
     </state>

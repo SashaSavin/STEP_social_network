@@ -94,6 +94,7 @@ SOCIALACCOUNT_PROVIDERS = {
     }
 }
 
+AUTH_USER_MODEL = 'app.User' # app
 
 ACCOUNT_FORMS = {
     'signup': 'app.forms.CustomSignupForm',
@@ -102,6 +103,7 @@ ACCOUNT_FORMS = {
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend',
+    'app.backends.CustomBackend',
 ]
 
 MIDDLEWARE = [

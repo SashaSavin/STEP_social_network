@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block info %}
+{% endblock %}
+
+{% block content %}
+
+          {% if request.user.is_authenticated %}
+            Online
+          {% else %}
+            Offline
+          {% endif %}
+
+    <div class="container m-5">
+        <h3>
+            <img src="{{user_profile.avatar.url}}" alt="" width="30" height="30" style="border-radius:50%;">
+            {{user_profile.user}}
+        </h3>
+    </div>
+
+
+{% endblock %}

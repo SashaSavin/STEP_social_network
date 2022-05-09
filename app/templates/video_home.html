@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+        {% for video in video_list %}
+        <div class="card" style="width: 18rem;">
+          <img src="{{ video.image.url }}" alt="" style="border-radius: 20px;" class="m-2">
+    <div class="card-body">
+      <h5 class="card-title">{{ video.title }}</h5>
+      <p class="card-text">{{ video.description|slice:":100" }}</p>
+     <a href="{% url 'video' video.id %}" class="btn btn-primary">{{ video.title }}</a>
+    </div>
+  </div>
+
+        {% endfor %}
+      </div>
+    </div>
+
+{% endblock content %}

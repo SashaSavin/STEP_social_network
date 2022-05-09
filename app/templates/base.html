@@ -75,7 +75,7 @@
 <div class="p-3 mb-4 bg-light rounded-3">
       <div class="container-fluid py-5">
         <h1 class="display-7 fw-bold">Приветствую!</h1>
-        <p class="col-md-8 fs-4">Здесь ты можешь обмениваться фотографиями, а так же общаться в чат команатах, которые не хранят переписку!</p>
+        <p class="col-md-8 fs-4">Здесь ты можешь обмениваться фотографиями, смотреть видео, а так же общаться в чат команатах, которые не хранят переписку!</p>
 
               {% if user.is_authenticated %}
       <a href="/chat/" class="btn btn-primary btn-lg">Войти в чат-команты</a>
@@ -83,6 +83,7 @@
          <p></p>
     {% endif %}
       <a href="{% url 'profiles' %}" class="btn btn-primary btn-lg">Социум</a>
+          <a href="{% url 'home' %}" class="btn btn-primary btn-lg">Видео</a>
 
       </div>
     </div>

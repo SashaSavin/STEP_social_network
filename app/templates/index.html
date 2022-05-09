@@ -33,6 +33,8 @@
 </div>
 </div>
 
+
+
     <div class="col">
 
         <div class="card">
@@ -56,10 +58,17 @@
             </div>
         </div>
 
-    <div class="container m-5">
 
-         <h1>Свежее:</h1>
-        <div class="row">
+                <div class="accordion m-4" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+       <h3>Свежее</h3>
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+                <div class="row">
     {% for p in last_posts %}
             <div class="col">
                 <div class="card" style="width: 20rem;">
@@ -69,7 +78,7 @@
                 <p class="card-text">{{p.text| safe}}</p>
                   <hr>
                   <small>Категория: {{p.category.name}}</small>
-                  <p class="card-text">Автор: {{p.author | safe}}</p>
+                  <p class="card-text">Автор: <a href="">{{p.author | safe}}</a></p>
                    <strong class="text-secondary">{{ p.number_of_likes }} Like{{ p.number_of_likes|pluralize }}</strong>
                 <a href="{% url 'detail' p.id %}" class="btn btn-primary">Посмотреть</a>
               </div>
@@ -77,11 +86,20 @@
         </div>
             {% endfor %}
         </div>
-        </div>
-    <hr>
-       <div class="container m-5">
-         <h1>Популярное:</h1>
-        <div class="row">
+      </div>
+    </div>
+
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <h3>Популярное:</h3>
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+             <div class="row">
     {% for p in popular %}
             <div class="col">
                 <div class="card" style="width: 20rem;">
@@ -89,7 +107,7 @@
               <div class="card-body">
                 <h5 class="card-title">{{p.title| safe}}</h5>
                 <p class="card-text">{{p.text| safe}}</p>
-                  <p class="card-text">Автор: {{p.author | safe}}</p>
+                  <p class="card-text">Автор: <a href="">{{p.author | safe}}</a></p>
                    <strong class="text-secondary">{{ p.number_of_likes }} Like{{ p.number_of_likes|pluralize }}</strong>
                 <a href="{% url 'detail' p.id %}" class="btn btn-primary">Посмотреть</a>
               </div>
@@ -97,16 +115,18 @@
         </div>
             {% endfor %}
         </div>
-        </div>
-
-            </div>
-        </div>
-
-
-       <hr>
-       <div class="container m-5">
-         <h1>Все и сразу:</h1>
-             <div class="row">
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <h3>Все-все:</h3>
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+                      <div class="row">
     {% for p in post %}
                     <div class="col">
                 <div class="card m-3" style="width: 25rem;">
@@ -115,16 +135,21 @@
               <div class="card-body">
                 <h5 class="card-title">{{p.title| safe}}</h5>
                 <p class="card-text">{{p.text| safe}}</p>
-                  <p class="card-text">Автор: {{p.author | safe}}</p>
+                  <p class="card-text">Автор: <a href="">{{p.author | safe}}</a></p>
                    <strong class="text-secondary">{{ p.number_of_likes }} Like{{ p.number_of_likes|pluralize }}</strong>
                 <a href="{% url 'detail' p.id %}" class="btn btn-primary">Посмотреть</a>
               </div>
             </div>
                </div>
-
             {% endfor %}
         </div>
-       </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
         </div>
 

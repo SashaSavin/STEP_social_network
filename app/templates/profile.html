@@ -4,7 +4,6 @@
 {% endblock %}
 
 
-
 {% block content %}
 
 <div class="container m-3">
@@ -17,7 +16,18 @@
   <img src="{{profile.avatar.url}}" class="card-img-top" alt="..." >
   <div class="card-body">
 
-      <li class="list-group-item"><h1>{{profile}}</h1></li>
+      <li class="list-group-item">
+          <h1>{{profile}} </h1>
+
+          {% if profile.is_o %}
+            Online
+          {% else %}
+            Offline
+          {% endif %}
+
+
+      </li>
+
       <li class="list-group-item"> инфо: {{profile.info}}</li>
       <li class="list-group-item"> подписки: {{profile.get_friends_num}}</li>
 

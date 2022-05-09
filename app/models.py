@@ -1,5 +1,25 @@
-from django.contrib.auth.models import User
+from django.contrib.auth.models import AbstractUser
+from django.contrib.humanize.templatetags.humanize import naturaltime
+from django.core.validators import FileExtensionValidator
 from django.db import models
+from django.utils import timezone
+from django.utils.translation import gettext_lazy as _
+
+
+class User(AbstractUser):
+    last_online = models.DateTimeField(blank=True, null=True)
+
+    def is_online(self):
+        if self.last_online:
+            return (timezone.now() - self.last_online) < timezone.timedelta(minutes=1)
+        return False
+
+    def get_online_info(self):
+        if self.is_online():
+            return _('Online')
+        if self.last_online:
+            return _('Last visit {}').format(naturaltime(self.last_online))
+        return _('Unknown')
 
 
 class Category(models.Model):
@@ -14,10 +34,11 @@ class Category(models.Model):
 
 
 class Profile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE, blank=True, default= None)
+    user = models.OneToOneField(User, on_delete=models.CASCADE, blank=True, default= None, related_name='profile')
     avatar = models.ImageField(upload_to='media/imgs/avatar')
     info = models.CharField(max_length=30)
     subscribers = models.ManyToManyField(User, related_name='subscr', blank=True, default= None)
+    is_online = models.BooleanField(default=False)
 
     def get_friends(self):
         return self.subscribers.all()
@@ -40,6 +61,7 @@ class Post(models.Model):
     title = models.CharField(max_length=40)
     text = models.CharField(max_length=100)
     image = models.ImageField(upload_to='images/', default=None, null=True, blank=True)
+
     likes = models.ManyToManyField(User, related_name='post_like')
 
     def number_of_likes(self):
@@ -72,3 +94,17 @@ class Relationship(models.Model):
 
     def __str__(self):
        return f'{self.sender}-{self.receiver}-{self.status}'
+
+
+class Video(models.Model):
+    title = models.CharField(max_length=100)
+    description = models.TextField()
+    image = models.ImageField(upload_to='image/')
+    file = models.FileField(
+        upload_to='video/',
+        validators=[FileExtensionValidator(allowed_extensions=['mp4'])]
+    )
+    create_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.title
