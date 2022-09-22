@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block info %}
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container m-3">
+    <div class="row">
+        <div class="col">
+    <div class="card" style="width: 40rem;">
+                  <div class="card-header">
+                Страница пользователя
+            </div>
+  <img src="{{profile.avatar.url}}" class="card-img-top" alt="..." >
+  <div class="card-body">
+
+      <li class="list-group-item">
+          <h1>{{profile}} </h1>
+
+          {% if profile.is_o %}
+            Online
+          {% else %}
+            Offline
+          {% endif %}
+
+
+      </li>
+
+      <li class="list-group-item"> инфо: {{profile.info}}</li>
+      <li class="list-group-item"> подписки: {{profile.get_friends_num}}</li>
+
+
+
+
+        </div>
+
+    </div>
+
+
+            </div>
+                <div class="col">
+
+                <div class="card" style="width: 18rem;">
+                        <div class="card-header">
+                Меню:
+            </div>
+  <ul class="list-group list-group-flush">
+      <li class="list-group-item"><a href="{% url 'create' %}">Создать пост</a></li>
+  <li class="list-group-item"><a href="{% url 'usr_pst' %}">Мои посты</a></li>
+    <li class="list-group-item"><a href="{% url 'show_subs' %}">Подписчики</a></li>
+    <li class="list-group-item"><a href="{% url 'upd' %}">Изменить профиль</a></li>
+    <li class="list-group-item"><a href="{% url 'del' %}">Удалить профиль</a></li>
+  </ul>
+</div>
+  </div>
+</div>
+
+
+
+
+</div>
+{% endblock %}

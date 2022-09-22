@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block info %}
+{% endblock %}
+
+
+
+{% block content %}
+<div class="container">
+    <h3>Подписчики:</h3>
+    {% for i in profile.get_friends %}
+
+        <li class="list-group-item"> {{i}}<a href=""> Удалить</a> </li>
+    {% endfor %}
+    </div>
+
+{% endblock %}

@@ -1,13 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8"/>
-    <title>Chat Rooms</title>
-</head>
-<body>
-    Выберите чат-комнату:<br>
-    <input id="room-name-input" type="text" size="100"><br>
-    <input id="room-name-submit" type="button" value="Enter">
+{% extends "base.html" %}
+
+{% block info %}
+{% endblock %}
+
+{% block content  %}
+<div class="container m-5">
+    <h2>Создайте чат-комнату:</h2><br>
+    <input id="room-name-input" type="text" size="100">
+    <input id="room-name-submit" type="button" value="Enter" class="btn btn-outline-success me-2">
+
+
+    <h5>Или выберете из существующих:</h5>
 
     <script>
         document.querySelector('#room-name-input').focus();
@@ -22,5 +25,7 @@
             window.location.pathname = '/chat/' + roomName + '/';
         };
     </script>
-</body>
-</html>
+
+    </div>
+{% endblock %}
+
